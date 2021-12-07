@@ -182,6 +182,8 @@ var user = {
 
 //Code Here
 
+user.name = `Bryan G. Smith`;
+user.email = `bryan.smith@devmountain.in`;
 
 //////////////////////////// PROBLEM 11 ////////////////////////////
 /*
