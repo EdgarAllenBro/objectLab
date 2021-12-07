@@ -48,13 +48,22 @@ console.log(dog.color)
 */
 
 //Code here
-
+const favoriteThings ={
+  band:'The one and only The War On Drugs all the way from Philly to the world.',
+  food:'Tacos',
+  person:'Mah Daughter: Natalie',
+  book:'The Lion the Witch and The Wardrobe',
+  movie:'Elf',
+  holiday:'Halloween',
+}
 
 /*
   After you've made your object, use bracket or dot notation to add another key named 'car' with the value being your favorite car and then another key named 'show' with the value being your favorite show.
 */
 
 //Code here
+favoriteThings.car = `Ferrari`;
+favoriteThings.show = `The Office`;
 
 
 /*
@@ -63,6 +72,8 @@ console.log(dog.color)
 */
 
 //Code here
+favoriteThings.food = `mc nuggies (┛ಠ_ಠ)┛彡┻━┻`
+console.log(favoriteThings)
 
 
 //////////////////////////// PROBLEM 6 ////////////////////////////
@@ -81,7 +92,7 @@ var carDetails = {
 */
 
 //Code Here
-
+let {color, make, model, year} = carDetails
 
 
 //////////////////////////// PROBLEM 7 ////////////////////////////
@@ -94,7 +105,7 @@ var carDetails = {
 
 function greeting( obj ) {
   //Code Here
-  
+  let {firstName,lastName,title} = obj
   // Do not edit the code below.
   return 'Hello, ' + title + ' ' + firstName + ' ' + lastName + '!';
   // Do not edit the code above.
