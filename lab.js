@@ -294,6 +294,11 @@ console.log(iphone.price)
 */
 
 //Code Here
+let android = new Phone (`android`,`thisOne`,512,`blue`,5, false)
+
+let payPhone = new Phone(`DELL`, `windows vista`, 8, `grey`, 4440409458949585899, false)
+// console.log(payPhone)
+let walmartBurner = new Phone ('flip phone', 'sketchy 5', 1, `black`, -10, false)
 
 /* 
   Call the changePrice function on one of your phones, 
@@ -303,7 +308,8 @@ console.log(iphone.price)
 */ 
 
 //Code Here 
-
+android.changePrice(123)
+console.log(android)
 
 /*
   Now call the sell method on one of your other phone objects
@@ -312,7 +318,8 @@ console.log(iphone.price)
 */
 
 //Code Here 
-
+android.sell()
+console.log(android)
 
 //////////////////////////// PROBLEM 15 ////////////////////////////
 
@@ -331,7 +338,8 @@ const colors = {
 //do not edit this object
 
 //Code Here 
-
+let colorsCopy ={...colors}
+console.log(colorsCopy)
 
 
 /*
@@ -359,7 +367,9 @@ const shippingInfo = {
 //do not edit the objects above
 
 //Code Here
-
+const helensInfo = {...contactInfo, ...shippingInfo
+}
+console.log(helensInfo)
 
 //Print helensInfo to see what it looks like, there should be no repeating properties.
 
@@ -377,6 +387,19 @@ const shippingInfo = {
 */
 
 //Code Here 
+class Vehicle {
+  constructor(capacity, color, mileage){
+    this.capacity = capacity
+    this.color = color
+    this.mileage = mileage
+  }
+  move(miles) {
+    this.mileage = this.mileage + miles
+    console.log(this.mileage)
+
+  }
+}
+
 
 
 /*
@@ -384,7 +407,7 @@ const shippingInfo = {
 */
 
 //Code Here
-
+let myFirstVehiclke = new Vehicle(4,`black`,100000)
 
 /* 
   Now we'll create a class that's based off of the vehicle class. 
@@ -395,13 +418,20 @@ const shippingInfo = {
 */
 
 //Code Here
-
+class Motorcycle extends Vehicle{
+  constructor(capacity, color, mileage,make,isCool){
+    super(capacity,color,mileage);
+    this.make = make;
+    this.isCool = isCool
+  }
+}
 /*
   Create a Motorcycle using your new class and save it to a variable called myFirstMotorcycle
 */
 
 //Code Here 
-
+let myFirstMotorcycle = new Motorcycle (2,`blue`,12000, `huffy`, true)
+console.log(myFirstMotorcycle)
 /*
   Call the move function on myFirstMotorcycle (don't forget the parameter)
 */
