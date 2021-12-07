@@ -125,7 +125,17 @@ function greeting( obj ) {
 
 //Code Here
 
-
+function totalPopulation(obj){
+  let {utah, california, texas, arizona} = obj
+  return utah + california + texas + arizona
+  }
+  let states = {
+    utah: 1,
+    california: 1,
+    texas:1 ,
+    arizona:1 
+  }
+  
 
 //////////////////////////// PROBLEM 9 ////////////////////////////
 
@@ -139,7 +149,18 @@ function greeting( obj ) {
 
 //Code Here
 
-
+function ingredients(obj) {
+  let {carb, fat, protein} = obj
+  let array = [];
+  array.push(carb, fat, protein)
+  return array
+}
+const egg = {
+  carb:`1`,
+  fat:`2`,
+  protein:`3`
+}
+ingredients(egg)
 
 //////////////////////////// PROBLEM 10 ////////////////////////////
 // Do not edit the code below.
