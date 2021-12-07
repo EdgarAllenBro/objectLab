@@ -191,7 +191,7 @@ user.email = `bryan.smith@devmountain.in`;
 */
 
 //Code Here
-
+delete user.age
 
 //////////////////////////// PROBLEM 12 ////////////////////////////
 /*
@@ -202,7 +202,15 @@ user.email = `bryan.smith@devmountain.in`;
 
 //Code here
 
-
+class Cat{
+  constructor(name, age, color) {
+    this.name = name
+    this.age = age
+    this.color = color
+  } 
+}
+let fluffy = new Cat(`mittens`,6,`black`)
+console.log(fluffy)
 
 //////////////////////////// PROBLEM 13 ////////////////////////////
 /*
